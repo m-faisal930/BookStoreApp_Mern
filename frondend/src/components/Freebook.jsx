@@ -4,22 +4,21 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-import list from "../../public/list.json";
+// import list from "../../public/list.json";
 import Cards from "./Cards";
 
-// import axios from "axios";
-
+import axios from "axios";
 
 function Freebook() {
   const [book, setBook] = useState([]);
   useEffect(() => {
     const getBook = async () => {
       try {
-        // const res = await axios.get("http://localhost:4001/book");
+        const res = await axios.get("http://localhost:3000/book");
         // const data = res.data.filter((data) => data.category === "Free");
-        const data =  await list.filter((item) => item.category === "free");
-        console.log(data);
-        setBook(data);
+        // const data =  await list.filter((item) => item.category === "free");
+        console.log(res.data);
+        setBook(res.data);
       } catch (error) {
         console.log(error);
       }
@@ -67,9 +66,9 @@ function Freebook() {
         <div>
           <h1 className="font-semibold text-xl pb-2">Free Offered Courses</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Accusantium veritatis alias pariatur ad dolor repudiandae eligendi
-            corporis nulla non suscipit, iure neque earum?
+            Explore Our Free Courses! Unlock new skills and knowledge with
+            courses designed to inspire and empower you. Join us and start
+            learning today—no strings attached!
           </p>
         </div>
 

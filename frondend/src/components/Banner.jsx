@@ -1,4 +1,3 @@
-
 import React from "react";
 import banner from "/Banner.png";
 function Banner() {
@@ -12,9 +11,10 @@ function Banner() {
               <span className="text-pink-500">new everyday!!!</span>
             </h1>
             <p className="text-sm md:text-xl">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-              et totam. Tempora amet atque expedita, quae corrupti totam sed
-              pariatur corporis at veniam est voluptas animi!
+              Welcome to your daily dose of knowledge! Discover new stories,
+              explore ideas, and fuel your curiosity. Whether you're diving into
+              bestsellers or learning new skills, start your journey here. Let’s
+              explore together!
             </p>
             <label className="input input-bordered flex items-center gap-2">
               <svg
@@ -29,7 +29,7 @@ function Banner() {
               <input type="text" className="grow" placeholder="Email" />
             </label>
           </div>
-          <button className="btn mt-6 btn-secondary">Get Started</button>
+          <button className="btn mt-6 btn-secondary">Get in Touch</button>
         </div>
         <div className=" order-1 w-full mt-20 md:w-1/2">
           <img
